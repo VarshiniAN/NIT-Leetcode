@@ -4,3 +4,6 @@ class Solution(object):
             if nums[i]==target:
                 return i
         return -1
+nums=list(map(int,input().split()))
+target=int(input("Target:"))
+print(search(nums,target))
