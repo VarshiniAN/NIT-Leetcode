@@ -4,6 +4,9 @@ class Solution(object):
             if nums[i]==target:
                 return i
         return -1
-nums=list(map(int,input().split()))
-target=int(input("Target:"))
-print(search(nums,target))
+if __name__=="__main__":
+    nums=list(map(int,input().split()))
+    target=int(input("Target:"))
+    res=Solution()
+    ans=res.search(nums,target)
+    print(ans)
